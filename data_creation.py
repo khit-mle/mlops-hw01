@@ -1,6 +1,5 @@
 import yfinance as yf
 import os
-import pandas as pd
 
 # Define the NASDAQ ticker symbol
 nasdaq_ticker = "^IXIC"

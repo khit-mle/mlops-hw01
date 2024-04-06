@@ -1,5 +1,14 @@
-# ignore Python virtual environment
-.venv
+# ignore hidden files and dirs
+.*
+
+# do not ignore .gitignore itself
+!.gitignore
+
+# do not ignore .github
+!.github
+
+# do not ignore .pre-commit-config.yaml
+!.pre-commit-config.yaml
 
 # ignore train/ and test/ dirs
 train/
