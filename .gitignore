@@ -1,0 +1,6 @@
+# ignore Python virtual environment
+.venv
+
+# ignore train/ and test/ dirs
+train/
+test/
