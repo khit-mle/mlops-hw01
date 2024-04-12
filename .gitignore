@@ -13,3 +13,6 @@
 # ignore train/ and test/ dirs
 train/
 test/
+
+# ignore plots/ dir
+plots/
