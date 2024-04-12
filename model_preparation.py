@@ -3,6 +3,8 @@ import os
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.losses import MeanSquaredError
+from tensorflow.keras.metrics import RootMeanSquaredError
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 
@@ -29,7 +31,7 @@ def build_lstm_model(input_shape):
         ]
     )
     optimizer = Adam(learning_rate=LEARNING_RATE)
-    model.compile(optimizer=optimizer, loss="mse")
+    model.compile(optimizer=optimizer, loss=MeanSquaredError(), metrics=[RootMeanSquaredError()])
     return model
 
 
