@@ -38,7 +38,7 @@ def evaluate_model(model, X_test, y_test, scaler, ticker):
 
     mse = np.mean(np.square(predictions - y_test))
     rmse = np.sqrt(mse)
-    print(f"MSE: {mse}, RMSE: {rmse}")
+    print(f"\nTest result: MSE: {mse}, RMSE: {rmse}\n")
 
     # Plot predictions vs actuals
     plt.figure(figsize=(10, 5))
