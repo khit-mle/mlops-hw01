@@ -16,3 +16,6 @@ test/
 
 # ignore plots/ dir
 plots/
+
+# ignore models/ dir
+models/
