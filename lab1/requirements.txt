@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+plotly
+kaleido
+tensorflow
+keras
+scikit-learn
