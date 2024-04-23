@@ -10,12 +10,9 @@
 # do not ignore .pre-commit-config.yaml
 !.pre-commit-config.yaml
 
-# ignore train/ and test/ dirs
-train/
-test/
-
-# ignore plots/ dir
-plots/
-
-# ignore models/ dir
-models/
+# Ignore directories with the specified substrings
+*/models/*
+*/plots/*
+*/test/*
+*/train/*
+*/data/*
