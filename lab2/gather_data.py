@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 from pandas.tseries.offsets import MonthEnd
 
+
 # Fetch API key from environment variables
 apikey = os.getenv("ALPHAVANTAGE_API_KEY")
 

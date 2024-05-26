@@ -8,6 +8,7 @@ from tensorflow.keras.metrics import RootMeanSquaredError
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 
+
 # Constants
 BATCH_SIZE = 32
 EPOCHS = 50
@@ -21,15 +22,13 @@ def load_preprocessed_data(file_path):
 
 
 def build_lstm_model(input_shape):
-    model = Sequential(
-        [
-            LSTM(50, return_sequences=True, input_shape=input_shape),
-            Dropout(DROPOUT_RATE),
-            LSTM(50),
-            Dropout(DROPOUT_RATE),
-            Dense(1),
-        ]
-    )
+    model = Sequential([
+        LSTM(50, return_sequences=True, input_shape=input_shape),
+        Dropout(DROPOUT_RATE),
+        LSTM(50),
+        Dropout(DROPOUT_RATE),
+        Dense(1),
+    ])
     optimizer = Adam(learning_rate=LEARNING_RATE)
     model.compile(optimizer=optimizer, loss=MeanSquaredError(), metrics=[RootMeanSquaredError()])
     return model
