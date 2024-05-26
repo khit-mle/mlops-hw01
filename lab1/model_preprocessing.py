@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
+
 SEQUENCE_LENGTH = 10  # Number of days in each sequence
 
 
