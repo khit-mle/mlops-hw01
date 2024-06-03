@@ -1,7 +1,10 @@
+ipykernel
 matplotlib
+mplcyberpunk
 numpy
 pandas
 plotly
+pytest
 requests
 scikit_learn
 tensorflow
