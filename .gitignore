@@ -16,3 +16,4 @@
 */test/*
 */train/*
 */data/*
+*/__pycache__/
