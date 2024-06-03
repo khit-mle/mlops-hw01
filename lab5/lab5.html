@@ -7742,13 +7742,13 @@ Coefficient: 2.989429703090334
     <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># Same seed as Dataset 3 for consistency</span>
     <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">base_linear_relationship</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">)</span>  <span class="c1"># Base noise</span>
-    
+
     <span class="c1"># Introduce additional noise to a fraction of the points</span>
     <span class="n">num_noisy_points</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n_samples</span> <span class="o">*</span> <span class="n">noise_fraction</span><span class="p">)</span>
     <span class="n">noisy_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">num_noisy_points</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">noise_magnitude</span><span class="p">,</span> <span class="n">num_noisy_points</span><span class="p">)</span>
     <span class="n">y</span><span class="p">[</span><span class="n">noisy_indices</span><span class="p">]</span> <span class="o">+=</span> <span class="n">noise</span>  <span class="c1"># Add significant noise to selected points</span>
-    
+
     <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
 
 
