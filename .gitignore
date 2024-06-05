@@ -17,3 +17,6 @@
 */train/*
 */data/*
 */__pycache__/
+
+# ignore lab4 draft ipynb
+lab4/lab4.ipynb
