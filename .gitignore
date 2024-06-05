@@ -10,6 +10,9 @@
 # do not ignore .pre-commit-config.yaml
 !.pre-commit-config.yaml
 
+# do not ignore .dvc
+!.dvc
+
 # Ignore directories with the specified substrings
 */models/*
 */plots/*
