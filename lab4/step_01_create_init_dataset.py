@@ -1,17 +1,18 @@
 import os
+
 from catboost.datasets import titanic
 
 
-# Проверка и создание директории, если она не существует
-data_dir = 'lab4/data'
+# Create lab4 data dir if not exists
+data_dir = "lab4/data"
 if not os.path.exists(data_dir):
     os.makedirs(data_dir)
 
-# Загрузка датасета
+# Load train from Titanic dataset
 train_df, _ = titanic()
 
-# Сохранение нужных столбцов
-initial_df = train_df[['Pclass', 'Sex', 'Age']]
+# Select columns as per homework assignment
+initial_df = train_df[["Pclass", "Sex", "Age"]]
 
-# Сохранение датасета в CSV файл
-initial_df.to_csv(os.path.join(data_dir, 'titanic.csv'), index=False, header=True)
+# Save dataframe to csv which we would track with DVC
+initial_df.to_csv(os.path.join(data_dir, "titanic.csv"), index=False, header=True)
