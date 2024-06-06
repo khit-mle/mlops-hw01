@@ -14,4 +14,4 @@ train_df, _ = titanic()
 initial_df = train_df[['Pclass', 'Sex', 'Age']]
 
 # Сохранение датасета в CSV файл
-initial_df.to_csv(os.path.join(data_dir, 'titanic_initial.csv'), index=False, header=True)
+initial_df.to_csv(os.path.join(data_dir, 'titanic.csv'), index=False, header=True)

@@ -21,5 +21,8 @@
 */data/*
 */__pycache__/
 
+# Allow .dvc files in lab4/data directory
+!lab4/data/*.dvc
+
 # ignore lab4 draft ipynb
 lab4/lab4.ipynb
