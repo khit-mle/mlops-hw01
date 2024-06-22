@@ -8,5 +8,6 @@ pandas
 plotly
 pytest
 requests
+ruff
 scikit_learn
 tensorflow
