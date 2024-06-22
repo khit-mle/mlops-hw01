@@ -10,6 +10,9 @@
 # do not ignore .pre-commit-config.yaml
 !.pre-commit-config.yaml
 
+# do not ignore .dvc
+!.dvc
+
 # Ignore directories with the specified substrings
 */models/*
 */plots/*
@@ -17,3 +20,9 @@
 */train/*
 */data/*
 */__pycache__/
+
+# Allow .dvc files in lab4/data directory
+!lab4/data/*.dvc
+
+# ignore lab4 draft ipynb
+lab4/lab4.ipynb

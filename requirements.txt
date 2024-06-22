@@ -1,3 +1,5 @@
+dvc[gdrive]
+catboost
 ipykernel
 matplotlib
 mplcyberpunk
@@ -6,5 +8,6 @@ pandas
 plotly
 pytest
 requests
+ruff
 scikit_learn
 tensorflow
