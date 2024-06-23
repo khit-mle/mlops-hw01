@@ -14,12 +14,12 @@
 !.dvc
 
 # Ignore directories with the specified substrings
-*/models/*
-*/plots/*
-*/test/*
-*/train/*
-*/data/*
-*/__pycache__/
+**/models/*
+**/plots/*
+**/test/*
+**/train/*
+**/data/*
+**/__pycache__/*
 
 # Allow .dvc files in lab4/data directory
 !lab4/data/*.dvc
