@@ -1,0 +1,10 @@
+name: iris-classifier
+
+services:
+  iris-classifier:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app
+      - ./models:/app/models
